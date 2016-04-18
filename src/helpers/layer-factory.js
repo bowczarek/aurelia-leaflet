@@ -142,28 +142,28 @@ export default class LayerFactory {
     if (!layer.hasOwnProperty('latLngs')) {
       throw new AureliaLeafletException('No latLngs given for layer.type "polyline"');
     }
-    return this.L.polyline(layer.latlngs, layer.options);
+    return this.L.polyline(layer.latLngs, layer.options);
   }
 
   getMultiPolyline(layer) {
     if (!layer.hasOwnProperty('latLngs')) {
       throw new AureliaLeafletException('No latLngs given for layer.type "multiPolyline"');
     }
-    return this.L.multiPolyline(layer.latlngs, layer.options);
+    return this.L.multiPolyline(layer.latLngs, layer.options);
   }
 
   getPolygone(layer) {
     if (!layer.hasOwnProperty('latLngs')) {
       throw new AureliaLeafletException('No latLngs given for layer.type "polygone"');
     }
-    return this.L.polygone(layer.latlngs, layer.options);
+    return this.L.polygone(layer.latLngs, layer.options);
   }
 
   getMultiPolygone(layer) {
     if (!layer.hasOwnProperty('latLngs')) {
       throw new AureliaLeafletException('No latLngs given for layer.type "multiPolygone"');
     }
-    return this.L.multiPolygone(layer.latlngs, layer.options);
+    return this.L.multiPolygone(layer.latLngs, layer.options);
   }
 
   getRectangle(layer) {
