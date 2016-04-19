@@ -183,7 +183,7 @@ var LayerFactory = (function () {
       if (!layer.hasOwnProperty('latLngs')) {
         throw new _aureliaLeafletExceptions.AureliaLeafletException('No latLngs given for layer.type "polyline"');
       }
-      return this.L.polyline(layer.latlngs, layer.options);
+      return this.L.polyline(layer.latLngs, layer.options);
     }
   }, {
     key: 'getMultiPolyline',
@@ -191,7 +191,7 @@ var LayerFactory = (function () {
       if (!layer.hasOwnProperty('latLngs')) {
         throw new _aureliaLeafletExceptions.AureliaLeafletException('No latLngs given for layer.type "multiPolyline"');
       }
-      return this.L.multiPolyline(layer.latlngs, layer.options);
+      return this.L.multiPolyline(layer.latLngs, layer.options);
     }
   }, {
     key: 'getPolygone',
@@ -199,7 +199,7 @@ var LayerFactory = (function () {
       if (!layer.hasOwnProperty('latLngs')) {
         throw new _aureliaLeafletExceptions.AureliaLeafletException('No latLngs given for layer.type "polygone"');
       }
-      return this.L.polygone(layer.latlngs, layer.options);
+      return this.L.polygone(layer.latLngs, layer.options);
     }
   }, {
     key: 'getMultiPolygone',
@@ -207,7 +207,7 @@ var LayerFactory = (function () {
       if (!layer.hasOwnProperty('latLngs')) {
         throw new _aureliaLeafletExceptions.AureliaLeafletException('No latLngs given for layer.type "multiPolygone"');
       }
-      return this.L.multiPolygone(layer.latlngs, layer.options);
+      return this.L.multiPolygone(layer.latLngs, layer.options);
     }
   }, {
     key: 'getRectangle',
